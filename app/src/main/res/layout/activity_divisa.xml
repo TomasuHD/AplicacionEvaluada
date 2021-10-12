@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBG"
+    android:backgroundTint="@color/colorBG"
+    tools:context="com.tomaspev.calculadoraplus.Divisa">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="373dp"
+        android:layout_height="208dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/conversor" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="44dp"
+        android:text="$"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+        app:layout_constraintEnd_toStartOf="@+id/valorOriginal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.21" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="8dp"
+        android:text="Convertir a CLP"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/valorOriginal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <Button
+        android:id="@+id/btnConvertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="127dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/fondo_oscuro"
+        android:onClick="convertir"
+        android:text="Convertir"
+        android:textColor="@color/texto"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline11" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="105dp"
+        android:background="@empty"
+        android:backgroundTint="@color/fondo_oscuro"
+        android:onClick="volverInicio"
+        android:text="Volver"
+        android:textColor="@color/texto"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConvertir" />
+
+    <EditText
+        android:id="@+id/valorOriginal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="182dp"
+        android:ems="10"
+        android:hint="Cantidad a convertir"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnConvertir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/valor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="@+id/guideline12"
+        app:layout_constraintTop_toTopOf="@+id/guideline9"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <TextView
+        android:id="@+id/valor4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/guideline10"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <TextView
+        android:id="@+id/valor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toTopOf="@+id/guideline9"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <TextView
+        android:id="@+id/valor3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline11"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="@+id/guideline12"
+        app:layout_constraintTop_toBottomOf="@id/guideline10"
+        app:layout_constraintVertical_bias="0.384" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="381dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="435dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="490dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="50dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="284dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="240dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="147dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EUR"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toTopOf="@+id/guideline9"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YEN"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/guideline11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toTopOf="@+id/guideline10"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USD"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toStartOf="@+id/guideline12"
+        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline9"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ARS"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/guideline11"
+        app:layout_constraintEnd_toStartOf="@+id/guideline12"
+        app:layout_constraintHorizontal_bias="0.791"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline10"
+        app:layout_constraintVertical_bias="0.529" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

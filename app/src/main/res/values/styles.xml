@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CalculatorNumbers" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/fondo_claro</item>
+        <item name="colorControlHighlight">@color/fondo_oscuro</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="CalculatorOperations" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/fondo_claro</item>
+        <item name="colorControlHighlight">@color/fondo_oscuro</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+</resources>

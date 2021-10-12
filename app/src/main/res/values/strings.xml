@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Calculadora+</string>
+
+    <string-array name="monedas">
+        <item>CLP</item>
+        <item>USD</item>
+        <item>ARS</item>
+        <item>EUR</item>
+        <item>RUB</item>
+    </string-array>
+</resources>
