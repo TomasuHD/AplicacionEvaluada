@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.87.0">
+    <title>Calculate+</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/product/">
+    <link href='https://fonts.googleapis.com/css?family=Asap' rel='stylesheet'>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<meta name="theme-color" content="#7952b3">
+
+  <style>
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  .titulo{
+      font-family: 'Asap';
+      font-size: 3rem;
+      font-style: italic;
+  }
+  .fondo:before {  
+ 		content:'';
+ 		position: absolute;
+ 		top: 0;
+ 		bottom: 0;
+ 		left: 0;
+ 		right: 0;
+ 		background-color: rgba(0,0,0,0.4);
+ 	}
+	.texto-feature{
+		z-index: 1;
+	}
+  .logo{
+    width: 15%;
+    height: auto;
+
+  }
+  .brand{
+    width: 25%;
+  }
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+    }
+  }
+
+  </style>
+    <link href="css/producto.css" rel="stylesheet">
+  </head>
+  <body>
+<header class="site-header sticky-top py-1">
+  <nav class="container d-flex flex-column flex-md-row justify-content-between">
+    <img class="logo" src="img/logo.png" alt="logo">
+      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        <a class="nav-link" href="#caracteristicas">Caracteristicas</a>
+        <a class="nav-link contacto" href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<main>
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light ">
+    <div class="col-md-5 p-lg-5 mx-auto my-5">
+      <img src="img/logo2.png" width="30%">
+      <h1 class="display-4 fw-normal titulo">Calculate+</h1>
+      <p class="lead fw-normal">Tu herramienta multiuso 3 en 1 <br> ¡Descargala ya!</p>
+      <a href="#">
+
+      <a download="calculate+.apk" href="files/calculator+.apk"><img  width="50%" src="img/google.png"></a>
+
+      </a>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </div>
+
+  <div class="px-4 pt-5 my-5 text-center border-bottom">
+    <h1 class="display-4 fw-bold">Acerca de Calculate+</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Una calculadora única y multiproposito que viene para facilitarte la vida cotidiana. <br><br> ¡Una calculadora 3 en 1!</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Ver Presentación</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Manual de Usuario</button>
+      </div>
+    </div>
+    <div class="overflow-hidden" style="max-height: 42vh;">
+      <div class="container px-5">
+        <img src="img/ejemplo.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+  </div>
+
+  <h1 id="caracteristicas" class="display-4 fw-bold text-center ">Características</h1>
+
+  <div class="row row-cols-1 row-cols-lg-3 p-3 p-md-5 m-md-3 text-center border-bottom">
+    <div class="col">
+      <div class=" fondo card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('img/conversor.png');   background-size: cover;">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 texto-feature ">
+          <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Divisa</h2>
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+            </li>
+            <li class="d-flex align-items-center me-3">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+              <small></small>
+            </li>
+            <li class="d-flex align-items-center">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+              <small></small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="fondo card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('img/calculadora.PNG');   background-size: cover;">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 texto-feature">
+          <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Calculadora</h2>
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+            </li>
+            <li class="d-flex align-items-center me-3">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+              <small></small>
+            </li>
+            <li class="d-flex align-items-center">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+              <small></small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="fondo card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('img/tareas.png');   background-size: cover;">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1 texto-feature ">
+          <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Gestion de Tareas</h2>
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+            </li>
+            <li class="d-flex align-items-center me-3">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+              <small></small>
+            </li>
+            <li class="d-flex align-items-center">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+              <small></small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+</main>
+
+<footer id="contacto" class="container py-5 text-center ">
+  <h1 class="display-4 fw-bold text-center">Contacto</h1>
+  <div class="row">
+    <div class="col-12 col-md">
+      <img class="brand" src="img/logo3.png">
+      <small class="d-block mb-3 text-muted">Octubre, 2021.</small>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Recursos</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" download="calculator+.apk" href="files/calculator+.apk">Descargar Aplicación</a></li>
+        <li><a class="link-secondary" href="#contacto">Descargar Presentación</a></li>
+        <li><a class="link-secondary" href="#contacto">Manual de Usuario</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Sobre Mi</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" href="#contacto">Tomás Andrés Alvárez Abarca</a></li>
+        <li><a class="link-secondary" href="#contacto">tomasandres.fn@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
