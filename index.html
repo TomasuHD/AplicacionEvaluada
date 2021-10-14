@@ -35,6 +35,9 @@
       font-size: 3rem;
       font-style: italic;
   }
+  #caracteristicas{
+    padding-top: 45px;
+  }
   .fondo:before {  
  		content:'';
  		position: absolute;
@@ -54,6 +57,13 @@
   }
   .brand{
     width: 25%;
+  }
+  .descargar{
+    text-decoration: none;
+  }
+  .descargar2{
+    text-decoration: none;
+    color: #ffffff;
   }
   @media (min-width: 768px) {
     .bd-placeholder-img-lg {
@@ -95,8 +105,8 @@
     <div class="col-lg-6 mx-auto">
       <p class="lead mb-4">Una calculadora única y multiproposito que viene para facilitarte la vida cotidiana. <br><br> ¡Una calculadora 3 en 1!</p>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Ver Presentación</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Manual de Usuario</button>
+        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3"><a class="descargar2" download="Presentacion.pptx" href="files/Presentacion.pptx">Presentación</a></button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4"><a class="descargar" download="Manual.docx" href="files/Manual.docx">Manual de Usuario</a></button>
       </div>
     </div>
     <div class="overflow-hidden" style="max-height: 42vh;">
@@ -133,7 +143,7 @@
     </div>
 
     <div class="col">
-      <div class="fondo card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('img/calculate.png');   background-size: cover;">
+      <div class="fondo card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('img/calculate.png'); background-size: cover;">
         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 texto-feature">
           <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Calculadora</h2>
           <ul class="d-flex list-unstyled mt-auto">
@@ -184,9 +194,9 @@
     <div class="col-6 col-md">
       <h5>Recursos</h5>
       <ul class="list-unstyled text-small">
-        <li><a class="link-secondary" download="calculator+.apk" href="files/calculator+.apk">Descargar Aplicación</a></li>
-        <li><a class="link-secondary" href="#contacto">Descargar Presentación</a></li>
-        <li><a class="link-secondary" href="#contacto">Manual de Usuario</a></li>
+        <li><a class="link-secondary" download="calculate+.apk" href="files/calculate+.apk">Descargar Aplicación</a></li>
+        <li><a class="link-secondary" download="Presentacion.pptx" href="files/Presentacion.pptx">Descargar Presentación</a></li>
+        <li><a class="link-secondary" download="Manual.docx" href="files/Manual.docx">Manual de Usuario</a></li>
       </ul>
     </div>
     <div class="col-6 col-md">
